@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		1F237BF92AD091AF007D73C5 /* HomeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F237BF72AD091AF007D73C5 /* HomeCellTableViewCell.swift */; };
 		1F237BFA2AD091AF007D73C5 /* HomeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F237BF82AD091AF007D73C5 /* HomeCellTableViewCell.xib */; };
-		1F237BFF2AD0B103007D73C5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F237BFD2AD0B103007D73C5 /* DetailViewController.swift */; };
-		1F237C002AD0B103007D73C5 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F237BFE2AD0B103007D73C5 /* DetailViewController.xib */; };
+		1F94DA122AD1B2B500F15C85 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F94DA112AD1B2B400F15C85 /* DetailViewModel.swift */; };
+		1F94DA152AD1B52400F15C85 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F94DA132AD1B52400F15C85 /* DetailViewController.swift */; };
+		1F94DA162AD1B52400F15C85 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F94DA142AD1B52400F15C85 /* DetailViewController.xib */; };
 		1FB046732ACC9B4500E20685 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB046722ACC9B4500E20685 /* SplashViewController.xib */; };
 		1FB046752ACC9B6200E20685 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB046742ACC9B6200E20685 /* SplashViewModel.swift */; };
 		1FB046792ACC9E3B00E20685 /* HomeTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB046772ACC9E3B00E20685 /* HomeTableTableViewController.swift */; };
@@ -27,8 +28,9 @@
 /* Begin PBXFileReference section */
 		1F237BF72AD091AF007D73C5 /* HomeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellTableViewCell.swift; sourceTree = "<group>"; };
 		1F237BF82AD091AF007D73C5 /* HomeCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCellTableViewCell.xib; sourceTree = "<group>"; };
-		1F237BFD2AD0B103007D73C5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		1F237BFE2AD0B103007D73C5 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		1F94DA112AD1B2B400F15C85 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		1F94DA132AD1B52400F15C85 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1F94DA142AD1B52400F15C85 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		1FB046722ACC9B4500E20685 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		1FB046742ACC9B6200E20685 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		1FB046772ACC9E3B00E20685 /* HomeTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableTableViewController.swift; sourceTree = "<group>"; };
@@ -75,8 +77,9 @@
 		1F237BFC2AD0B0C9007D73C5 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				1F237BFD2AD0B103007D73C5 /* DetailViewController.swift */,
-				1F237BFE2AD0B103007D73C5 /* DetailViewController.xib */,
+				1FDFC72B2AD1B20E00F4FE61 /* View */,
+				1FDFC72A2AD1B20600F4FE61 /* Controller */,
+				1FDFC7292AD1B1F700F4FE61 /* ViewModel */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -206,6 +209,30 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		1FDFC7292AD1B1F700F4FE61 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F94DA112AD1B2B400F15C85 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1FDFC72A2AD1B20600F4FE61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1FDFC72B2AD1B20E00F4FE61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F94DA132AD1B52400F15C85 /* DetailViewController.swift */,
+				1F94DA142AD1B52400F15C85 /* DetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1FFC11AF2ACCB0AF008F79C8 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,7 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FB618522ACC95F000548315 /* LaunchScreen.storyboard in Resources */,
-				1F237C002AD0B103007D73C5 /* DetailViewController.xib in Resources */,
+				1F94DA162AD1B52400F15C85 /* DetailViewController.xib in Resources */,
 				1F237BFA2AD091AF007D73C5 /* HomeCellTableViewCell.xib in Resources */,
 				1FB6184F2ACC95F000548315 /* Assets.xcassets in Resources */,
 				1FB046732ACC9B4500E20685 /* SplashViewController.xib in Resources */,
@@ -288,13 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F237BFF2AD0B103007D73C5 /* DetailViewController.swift in Sources */,
 				1FB6185B2ACC96A700548315 /* SplashViewController.swift in Sources */,
 				1FB046792ACC9E3B00E20685 /* HomeTableTableViewController.swift in Sources */,
+				1F94DA122AD1B2B500F15C85 /* DetailViewModel.swift in Sources */,
 				1F237BF92AD091AF007D73C5 /* HomeCellTableViewCell.swift in Sources */,
 				1FFC11B12ACCB0C6008F79C8 /* CharacterModel.swift in Sources */,
 				1FB046752ACC9B6200E20685 /* SplashViewModel.swift in Sources */,
 				1FB0467F2ACCAD9700E20685 /* HomeViewModel.swift in Sources */,
+				1F94DA152AD1B52400F15C85 /* DetailViewController.swift in Sources */,
 				1FB618462ACC95ED00548315 /* AppDelegate.swift in Sources */,
 				1FB618482ACC95EE00548315 /* SceneDelegate.swift in Sources */,
 			);
