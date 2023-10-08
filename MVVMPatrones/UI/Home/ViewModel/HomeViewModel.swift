@@ -30,7 +30,7 @@ final class HomeViewModel{
     }
     
     private func loadData() {
-        viewData = sampleCharacterData //CARGAR DATOS: llamada a la api iría aquí
+        viewData = sampleCharacterData 
         viewDelegate?.updateViews()
         
         
@@ -49,7 +49,7 @@ extension HomeViewModel: HomeViewModelProtocol {
             return
         }
         viewDelegate?.navigateToDetail(with: data)
-        //Notificar a la vista que navegue al detalle
+        
     }
     
     func data(at index: Int) -> CharacterModel? {

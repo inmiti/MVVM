@@ -27,16 +27,7 @@ final class DetailViewModel {
     }
     
     
-    
-//    init(character: CharacterModel?) {
-//        self.character = character
-//        super.init(nibName: nil, bundle: nil)
-//    }
-//    
-//    @available(*, unavailable)
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+
     
     private func loadData(){
         viewDelegate?.updateView(name: character?.name, image: character?.image, description: character?.description)

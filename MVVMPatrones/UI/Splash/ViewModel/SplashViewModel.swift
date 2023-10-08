@@ -16,13 +16,13 @@ protocol SplashViewModelProtocol {
 // MARK: - Clase
 final class SplashViewModel {
     
-    private weak var viewDelegate: SplashViewProtocol? //Creo variable del tipo protocolo de la vista
+    private weak var viewDelegate: SplashViewProtocol?
     
-    init(viewDelegate: SplashViewProtocol?) {  // Gracias al init podré pasar al viewModel la vista delegada asociada.
+    init(viewDelegate: SplashViewProtocol?) {
         self.viewDelegate = viewDelegate
     }
     
-    private func loadData() {  // Funcion para cargar datos:  
+    private func loadData() {   
         viewDelegate?.showLoading(true)
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3)) { [weak self] in
             self?.viewDelegate?.showLoading(false)
@@ -36,7 +36,7 @@ final class SplashViewModel {
 // MARK: - Extension
 
 extension SplashViewModel: SplashViewModelProtocol {
-    func onViewsLoaded() {   //Las vistas se han cargado, la vista comunica que está cargada y el modelo decide cargar los datos.
+    func onViewsLoaded() {
         loadData()
     }
     

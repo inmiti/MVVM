@@ -30,13 +30,12 @@ class HomeTableTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+       
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return viewModel?.dataCount ?? 0 //la cuenta la hace el viewModel
+        return viewModel?.dataCount ?? 0
     }
     
     //Update views

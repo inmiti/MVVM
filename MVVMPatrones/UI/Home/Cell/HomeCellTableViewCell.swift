@@ -13,10 +13,6 @@ class HomeCellTableViewCell: UITableViewCell {
     @IBOutlet weak var imageCellHome: UIImageView!
     @IBOutlet weak var viewCellHome: UIView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Para dar formato
-    }
 
     override func prepareForReuse() {
         nameCellHome.text = nil

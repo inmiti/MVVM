@@ -30,7 +30,7 @@ class DetailViewController: UIViewController {
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel?.onViewsLoaded()    //updateView(character: character)
+        viewModel?.onViewsLoaded()    
     }
     
     private func update(name: String?) {
@@ -50,7 +50,7 @@ class DetailViewController: UIViewController {
 
 }
 
-// MARk: Extension
+// MARK: - Extension
 extension DetailViewController: DetailViewProtocol {
     func updateView(name: String?, image: String?, description: String?) {
         update(name: name)
