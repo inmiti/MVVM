@@ -13,7 +13,6 @@ protocol DetailViewProtocol: AnyObject {
     func updateView(name: String?, image: String?, description: String?)
 }
 
-
 // MARK: - Class
 class DetailViewController: UIViewController {
     
@@ -23,9 +22,6 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var descriptionCharacterTextView: UITextView!
     
     var viewModel: DetailViewModelProtocol?
-    
-    
-    
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -40,14 +36,9 @@ class DetailViewController: UIViewController {
         detailImageView.image = UIImage(named: image ?? "")
     }
 
-    func update(description: String?) {
+    private func update(description: String?) {
         descriptionCharacterTextView.text = description ?? ""
     }
-    
-    
-
-    
-
 }
 
 // MARK: - Extension
@@ -57,6 +48,4 @@ extension DetailViewController: DetailViewProtocol {
         update(image: image)
         update(description: description)
     }
-    
-    
 }
