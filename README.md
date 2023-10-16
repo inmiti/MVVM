@@ -1,5 +1,5 @@
 # MVVM
-Práctica realizada en el módulo patrones de diseño de "Desarrollo de Apps Móviles"
+Práctica realizada en el módulo "Patrones de diseño" del Bootcamp "Desarrollo de Apps Móviles" de Keepcoding.
 
 Se trata de una app de los Simpsons donde se pone en práctica el patrón de diseño MVVM.
 
